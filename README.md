@@ -1,54 +1,79 @@
-# CIFAR10-CNN-Image-Classifier
-CIFAR10-CNN-Image-Classifier
+CIFAR-10 CNN Image Classifier
 
-This project is a Convolutional Neural Network (CNN) model built using TensorFlow and Keras to classify images from the CIFAR-10 dataset. It uses data augmentation and batch normalization to improve model performance. The model is trained and evaluated to achieve high accuracy.
+This project is a Convolutional Neural Network (CNN) model built using TensorFlow and Keras to classify images from the CIFAR-10 dataset. The model achieves high accuracy by incorporating data augmentation, batch normalization, and dropout layers to enhance performance.
 
 Requirements
 
-Make sure you have the following dependencies installed before running the project:
+To run this project, you need the following dependencies:
 
-Python 3.x
+Python 3.7+
 
 TensorFlow
 
-JAX
-
 NumPy
 
-Matplotlib
+JAX
 
-SciPy
-
-OpenCV (optional for image processing)
+Matplotlib (optional for visualization)
 
 You can install the required libraries using:
 
-pip install tensorflow jax numpy matplotlib scipy opencv-python
+pip install tensorflow numpy jax matplotlib
 
-Running the Project
+Project Structure
 
-Clone the repository:
+CIFAR10-CNN-Image-Classifier/
+│── model.py            # CNN Model Training Script
+│── dataset.py          # CIFAR-10 Data Loading
+│── README.md           # Project Documentation
+│── requirements.txt    # Required Libraries
+└── results/            # Stores Training Results & Logs
+
+How to Run
+
+Clone this repository:
 
 git clone https://github.com/yourusername/CIFAR10-CNN-Image-Classifier.git
 
-Navigate to the project directory:
+Navigate to the project folder:
 
 cd CIFAR10-CNN-Image-Classifier
 
-Run the Python script:
+Install dependencies:
 
-python cifar10_classifier.py
+pip install -r requirements.txt
 
-Model Training and Evaluation
+Run the model training script:
 
-The model trains using the CIFAR-10 dataset with data augmentation.
+python model.py
 
-It evaluates performance on test data and prints accuracy.
+Uploading the Project to GitHub
 
-The trained model can be improved by tweaking hyperparameters.
+Follow these steps to upload your project to GitHub:
 
-Output
+Initialize Git:
 
-After training, the model prints the final test accuracy.
+git init
 
-The trained model can be used for further predictions.
+Add files:
+
+git add .
+
+Commit changes:
+
+git commit -m "Initial commit - CIFAR-10 CNN Image Classifier"
+
+Create a new repository on GitHub and copy the repo URL.
+
+Add remote repository:
+
+git remote add origin https://github.com/yourusername/CIFAR10-CNN-Image-Classifier.git
+
+Push code to GitHub:
+
+git branch -M main
+git push -u origin main
+
+Results
+
+After training, the model achieves a test accuracy of ~84%. The accuracy may improve further with hyperparameter tuning.
