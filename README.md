@@ -4,8 +4,6 @@ This project is a Convolutional Neural Network (CNN) model built using TensorFlo
 
 Requirements
 
-To run this project, you need the following dependencies:
-
 Python 3.7+
 
 TensorFlow
